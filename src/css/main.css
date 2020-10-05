@@ -1,0 +1,48 @@
+/*
+  You can use import statements to include partials:
+ */
+@import 'imports/reset.css';
+
+.cv-header{
+  background-color: #F7F8F9;
+}
+.icon{
+  font-size: 3rem
+}
+.logo{
+  height: 4.6875em;
+}
+
+h1{
+  &:before{
+    content: "{"
+  }
+  &:after{
+    content: "}"
+  }
+}
+
+h2{
+  &:before{
+    content: "<"
+  }
+  &:after{
+    content: "/>"
+  }
+}
+
+.f-14{
+  font-size: 0.875rem
+}
+.f-18{
+  font-size: 1.125rem
+}
+.f-24{
+  font-size: 1.5rem
+}
+.f-32{
+  font-size: 2rem
+}
+.f-40{
+  font-size: 2.5rem
+}
