@@ -1,24 +1,70 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <base href="/">
-  <title>My new Victor-Hugo site</title>
+  <title>SQL Components</title>
+
+  
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="/revealjs/reveal.css"/>
+  <link rel="stylesheet" href="/revealjs/theme/white.css"/>
+  
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
 
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
   
   
-    <link href="/main.10fcb.css" rel="stylesheet">
+  
+    <link href="/main.3bbda.css" rel="stylesheet">
   
 </head>
 
-<body>
+<body class="d-flex h-100">
 
-  
+  <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <nav class="navbar navbar-expand-lg navbar-light mb-auto">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-database"></i>
+        SQL Components
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-right">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/story">The Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/todo">Todo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/how">How</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   
 
@@ -28,12 +74,21 @@
 
 
 
-  
+  <footer class="mt-auto text-right">
+    <p>
+      <img src="https://camo.githubusercontent.com/94cee5f9e0ae21b66fbe829b4eb9f0419af5a0ca/68747470733a2f2f6261646765732e66726170736f66742e636f6d2f6f732f76332f6f70656e2d736f757263652e7376673f763d313033" alt="Open Source Love" data-canonical-src="https://badges.frapsoft.com/os/v3/open-source.svg?v=103" style="max-width:100%;"></p>
+  </footer>
+</div>
 
   
   
-    <script src="/main.10fcb.js"></script>
+    <script src="/main.3bbda.js"></script>
   
+
+  <script src="/revealjs/reveal.js"></script>
+  <script>
+    Reveal.initialize();
+  </script>
 </body>
 
 </html>
