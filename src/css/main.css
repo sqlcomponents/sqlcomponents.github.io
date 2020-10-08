@@ -44,9 +44,6 @@ body {
   font-weight: bold;
 }
 
-.container {
-  width: 100%;
-  
-  margin-right: auto;
-  margin-left: auto;
-  }
+.w-60{
+  width: 60%
+}
