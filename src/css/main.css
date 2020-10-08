@@ -38,3 +38,8 @@
   color: #fff;
   border-bottom-color: #fff;
 }
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+}

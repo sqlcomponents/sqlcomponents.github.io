@@ -9,6 +9,6 @@ draft: false
 
 1. Make Database Developer powerful again. SQL is THE skill
 2. Utilize the Structure to the fullest
-3. Utilize the platforms (Database + Application Language) witout comromize
+3. Utilize the platforms (Database + Application Language) witout compromise
 
 ## Have fun 😸
