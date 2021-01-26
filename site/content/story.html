@@ -7,17 +7,13 @@ draft: false
 
 <div class="reveal">
   <div class="slides">
-
-    
-
-
     <section>
       <div class="container">
         <div class="row">
           <div class="col-sm">
             <img src="/images/king.png" width="500px" height="500px" class="img-fluid rounded mx-auto d-block"
               alt="...">
-            <h3>Data</h3>
+            <h4>Data</h4>
           </div>
         </div>
       </div>
@@ -27,7 +23,7 @@ draft: false
         <div class="row">
           <div class="col-sm">
             <img src="/images/db.png" width="200px" height="200px" class="img-fluid rounded mx-auto d-block" alt="...">
-            <h3>Database</h3>
+            <h4>Database</h4>
           </div>
         </div>
       </div>
@@ -39,7 +35,7 @@ draft: false
             <img
               src="https://i0.wp.com/midwestfilmjournal.com/wp-content/uploads/2019/04/300-Movie-In-Download.jpg?fit=800%2C450&ssl=1"
               class="rounded mx-auto d-block" alt="...">
-            <h3>Database Developers</h3>
+            <h4>Database Developers</h4>
           </div>
         </div>
       </div>
@@ -48,7 +44,7 @@ draft: false
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <h3>Our Approches So far</h3>
+            <h4>Our Approches <u>So far</u></h4>
           </div>
         </div>
       </div>
@@ -76,7 +72,7 @@ draft: false
 
           </div>
           <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 d-flex justify-content-center my-auto">
-            <h5 class="ttext-secondary pt-2m-0">JDBC</h5>
+            <h5 class="text-secondary pt-2m-0">JDBC</h5>
           </div>
           <hr>
         </div>
@@ -126,19 +122,48 @@ draft: false
       <p class="fragment current-fragment" data-fragment-index="5">... Cache.</p>
     </section>
 
-    <section id="fragments" style="top: 206.5px; display: block;" class="present" data-fragment="5">
-      <h2>How ?! Dynamic</h2>
-      <p>Startup <=> Runtime</p>
-      <p class="fragment" data-fragment-index="0">... @Entity ...</p>
-      <p class="fragment" data-fragment-index="1">... @Transactional</p>
-      <p class="fragment" data-fragment-index="1">... @EQL</p>
+    <section>
+      <pre>
+        <code data-trim data-noescape>
+        SELECT 
+          *
+        FROM 
+          MOVIE 
+        WHERE 
+          DIRECTED_BY = <span class="text-primary">{</span>director<span class="text-primary">}</span>
+      </code>
+    </pre>
+      <h4><u>what</u> do we want to ?</h4>
+    </section>
+
+    <section>
+      <p>@Entity</p>
+      <p>@Transactional</p>
+      <p>@HQL</p>
+      <h4><u>how</u> do we do?</h4>
+    </section>
+
+    <section>
+      <p>Runtime</p>
+      <p>Startup</p>
+      <h4><u>when</u> do we do?</h4>
     </section>
 
     <section>
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <h3>Controlled <strong class="text-danger">Runtime</strong> environment</h3>
+            <h4>Controlled <strong class="text-danger">Runtime</strong> environment</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h4>Relational Databases of <u>Yesterday</u></h4>
           </div>
         </div>
       </div>
@@ -149,7 +174,7 @@ draft: false
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <h3>There were problems</h3>
+            <h4>There were problems</h4>
           </div>
         </div>
       </div>
@@ -159,7 +184,7 @@ draft: false
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <h3><s>Cloud Ready</s></h3>
+            <h4><s>Cloud Ready</s></h4>
           </div>
         </div>
       </div>
@@ -172,7 +197,7 @@ draft: false
             <img
               src="https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e3c1a71724a38245aa43b02_99bf70d46cc247be878de9d3a88f0c44.png"
               class="rounded mx-auto d-block" alt="...">
-            <h3 class="text-danger">Structured</h3>
+            <h4 class="text-danger">Structured</h4>
           </div>
         </div>
       </div>
@@ -189,7 +214,7 @@ draft: false
               <img width="500px"
                 src="https://hikingorg.files.wordpress.com/2019/07/illustration-hikers-crossing-stream-ways-frits-ahlefeldt-1.jpg?w=1200"
                 class="rounded mx-auto d-block" alt="...">
-              <h3>Digital Transformation Journey</h3>
+              <h4>Digital Transformation Journey</h4>
             </div>
           </div>
         </div>
@@ -200,7 +225,7 @@ draft: false
           <div class="row">
             <div class="col-sm">
               <img src="/images/worker.jpg" class="img-fluid rounded mx-auto d-block" alt="...">
-              <h3>Civil Industry</h3>
+              <h4>Civil Industry</h4>
             </div>
           </div>
         </div>
@@ -222,7 +247,7 @@ draft: false
           <div class="row">
             <div class="col-sm">
               <img src="/images/webcomponents.png" class="img-fluid rounded mx-auto d-block" alt="...">
-              <h3>Welcome to Webcomponents</h3>
+              <h4>Welcome to Webcomponents</h4>
             </div>
           </div>
         </div>
@@ -324,7 +349,7 @@ draft: false
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <h3>Relational Databses Today</h3>
+            <h4>Relational Databses <u>Today</u></h4>
           </div>
         </div>
       </div>
@@ -345,17 +370,17 @@ draft: false
         </div>
         <div class="row">
           <div class="col-6">
-            <img src="https://lh3.googleusercontent.com/YhSAwAk813wTAELQc-ZhXMwIpBWipZKNlsm6VpCnrNzhENSyphu8dt26mX18igKbHHTtJNs7Nw=w240-h240
+            <img src="https://lh4.googleusercontent.com/YhSAwAk813wTAELQc-ZhXMwIpBWipZKNlsm6VpCnrNzhENSyphu8dt26mX18igKbHHTtJNs7Nw=w240-h240
               " class="rounded mx-auto d-block" alt="..." width="250px" height="200px">
           </div>
           <div class="col-6">
             <img
-              src="https://img.favpng.com/15/6/25/logo-sail-racing-oracle-tee-grey-violet-brand-font-angle-png-favpng-HD6knDh3njvVQhxA6WUZnD9gK.jpg"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT8AAACeCAMAAABzT/1mAAAA4VBMVEXpGiL+/v7t7e3////qFR7/6uvdNz34+Pj09PTkBRPpGiPkU1jmjI/75+jfNTvnkJPWABDZKjD3xMb/2dnoERr909P/9fbcMDXkZ2zYWl7r6+viAA3mXmLnAAzhRUrro6XrmJriTlPkf4H1ycv1vsDeABHkWFz/6erndHjfAADeDhj4ubz94eLfbG/1sbPaEx3jPELRAADlJCrriYzup6rnsLLccnXgkpTRGyDmKzHpR03+ztDunqH00NLSU1jYKjDbgYPTY2fwi43yZmz4mJzNNz7pvr/wcnjRRkrWOkDPAA79ACBsAAAWv0lEQVR4nO1dC3vauNLGK5nUJA0BbEPWQLiZqwMtkGxYyOmePXu6m/P/f9Cn0cVX2RZx0nb38zxpH2xLo9FrSTMayaMK0oDQxU+MNHqNNH55wR/zyw/yyw/8WolXDutsXheRzHlixnidJaYirwqrk+Yz06KV1IrgF2V9EWP9zXl9kPM6q8rfAb8Yrx8ev8wuV+JX4lfi9w/CD2kIKFBGlAJmjHxm0ktfTqTASyvC60LOK0XMGK+zxEypcpxX5YLTB0ZnXZ6X+ruxfk9eFTWYxSv7mV79LF4ZvxSv7OdXtCzB6yLKi7M+r2X9rCbmW/IK8Mvs5meNbD+Mlag2smVa2TmKQSvxK/F7Hy1d4vcd29+Zll2myaTEK+YZKGTZvQ0vtSYT179MK/uXFz+xa36pRS8Rv9SilxeZvHJYZ/O6OIsXUuL1mip/8PUvx9H+5YpSndOVyuWV/FIt89+El5z1Lx5vdxXeTPUnxyhJlZzPlsCPDxl6A1dKUqabEr9CVOJXjEr8ilGAHyrxewWF2h/1xmglfmfRjRXzX30s8TuHblox/1WJ31lE8IvO30r8zqISv2JU4leMSvyKUYlfMQr0L1+Om/1z8Kt9gzIC++9HnH8oIpCS7A3xq6Xxesf5b1Hxa2/E413pfPzOEOlbdKDs4n88/DDGpoxwMps8YUaGeHbDMHM7A5MnWRSmWdn9c3oU8EupoSz5efiZPfep2u8POV1OL/mvfv+lceMY0ayHyzgNfYIMrpFVMXPTGVx1l5l1N3vO5volJFC4qF8JGG0iIvnbZjGJ14/w6w8l9EmW4xz/lbG8PR11TSyMRUnTW+vHbRgRsyNNKNJr+vGqbaRXZUgtg2PVTO2EpjusN2c2kUcq0smoGCP6y/7VVELPHQ6OhF9KDf+QMVFvf+Zm/hxlrCVKmtUbASIcP82vHSSPZtB3m5TS8JcZZEDIkqSg2hC73aYdESckEfm/9YR9/PoK+OFldxzhR8vXxP9EEFmuAL8c+9kZWhyyDCIIzl2Rn+CXk5ykb0qLq1XcNe8P6ORI5TEaKy1DHqTdEswIfvA7H78aNqqTTH72VNoRFP1X2N3Zueix+q5FgxH4ZWUjr/VJVp5xL7IhbSqrvNPxMuVBewJ7raeKX8Xo6Nn84DXK8WMJsvFzT359Ukk8bx5wFL/MDGglUxEbDwngkbVNJjDmtqitnDebRinj54xsXmCKrK0neUY1/Iy6qC3SZtZxDNRkBD+Px6Pl+e0TjVmTEvg9N+NE83tiZBkllYh7CtoCQoNEDzbubf/d6CBPooh7ylS1/zqPml8/vXVMsmt2Uzgo4WfM+ac5SD9dPi1dSnwFnl24y01/5yOydgP8kPavhUMovGpPczzNZ4yplxiYzVubZWV1SlTfHOq8uvaq+2UphHFCxHIo4mdOxeuw193GUsLOSGOggh+uMnGRtq46acYosXY3O5vDPDdC+N3Ky8bGi8eSdyIJahW8sZiy3k9YguMS10KTCXxj8XKaQ5fY4ekmohp++KkV5peVNEEq+Lkrxt4eOWnMadWwM+SIeMAkBz8yOnXYiLN3o0OzM2BcZptrnQ1Ju0gPNnb8dd45Of1SDT+Dl4cGrulXRpEU/FfmkFVT4/BlsDf6vE9eGXn41cDiOtIUz260vD7vvXMD7Df4qfexn6tSacwYqic3r60o4Ye/8O514s3jLPwstgH/osJxTNrP3BQj4ubwqoEZwLD2iBGT2/4qzh1LHNHAeMNQRZMl6alHVnZzEVSLgULUFMmWU1Ul/ERzbmbPFeWUP//A/HV7UkMtTos1qzwZ0xTwO6GkAnGueJu7hjHgkrVFNqIyedwxnZhoCpMKFfzw5tlPdL67Jh8/s6tReet8DEorg903/2IVJuarAn6rZPvDfT7mEbOmJiAmY2GVc6nhKithssjvaUr49anlhdYLUEXpJM+djx8bXZFdVWvdrkXRfg7jl1JN3KDqBjVDAwN2m1zn3tDy8NZD9P2tRCI2NUExrS0nFfzMOSvwtz54hYB+7f/KqP8pRPJK5OPnUCMCWXmjH6Wa6JP6Jrf94cVdoGxYZlpjVuUhz8WaP/l3z1MRW97v3nmkgh/XvhkTK0oruatIAb8xlWHlkPopjA/sdSL7gMPtj3WBiDvSWQ60eO1I5+QKfCDExc5KWDNMMK50Wmmemwg2Cvg5D/7UIwmif2MGr0s2/w38fyn6l3ZIOqApja5ml6HWCOFXOYTdm1NK3V2L+5tWbsBYgOWjU6uZAtI7NgA7TEONlwrCKOE3yfIb8FZF9Fde/02znzl+a7kbKUECtXD7q9T2MpkYLNy2oz497nZBNp9u4gAEcvOWtklnz8aTDc5f33gz/CZpo5eYf6T7r3j/bSq2PyoyQvY2Mv4t68mu4b9ZPy83lWIvixksfqPsMX3mHd6q/+7zxz/95fXzX95fiJGmhB9NjohNEsEPMwdR8sWSSY2fFfOqIK8dkcEcciOQDophTN7CfuHms/Y8tsbPz9Y4Qc3xWOIi4pSPH5chw4wLE97ORHON6l+noycAJDB3QpIZHY7TfS+68rXgE1RQyjXuLPG1dhYp2S9cwf+2WErJJX/p2fPxE29/kuo8iEksahezX4y+h3zcuFI7ffFBqNXwhrtBJsuopulO/81nqGPSg9kbItArGFRK9nODGewtYsVLXe+ZJeTjJ+Y32lThheMnz5c4gh/paWb7KAa9j1+bk8mp8xR5Je6AT9yqy2YwJGmhwZK8FkcMKBoayT3qYVKa/7oTPuFR1JARUvBfifl1K39nB3b5CAZTijB+tJ7mdsV1rv3vz44bWxznU10N7Rz4GVE0HE6S8QVXzClbFNOHuSOKEn7E4mLvTWWVLk6B/uX7iJL+K/zEtWJzk1MAFnN/ihmsX0YHToCXzca0q0jTC5xZZOJG+qgzSFnMAadMhTdP5FXzegQbTfL8V8LJ02oo9LAY3bS43y/dfyXGNGJz9bPGQGxs9jzhxJX7T+kyHuuZsExHWyXfJuTUQxM37HeLhMYhqpA7JMmU5DbHA6iEX8285StHXpc6ZFM3W0lIaf3cH4/seoN0OykZ7mYu2rJOfQ2y+S927wWAzetg2kYevLAFMO7ENLuxpWwxCKJZFde4UwaWK/pp8hAK9d/0RLCxxRUmoL2vpvN7/f4XfO2JAd2e7DpEIRLyd5pQFdmd78WCLNKYUSLBj0yEjemMzzS9YTClxku+1NHii5XL3yeUQktgfBRZLYhK8xWMPb6i8kg22fQPfvu7H4b33gSbcOjf8JO54T2Y8GvuukztT2PshsPDa/GrmNwvL0yPZLcKbhOTmFkWUvxIm6iKZmrf+yaIM2KtT+sIZWM4YmmP04IvkiHydvDBCssj7eqa/gnzqV822R0TN1ohfinpvE8SZNTwq4Hx5vOV9ywOHrKFsZ7mvzIbTaGGhRbBbW7grZkvQTIC4Yo/OyESYsFDLg8lYusYj7JdOjGC1VawrfL4SSchqvuHzMYqZ/8GF7Q1FTpGih8AY27WolprptLFCl/m5jnYUkRTwdYMvBlkbVfR6KJnxZjnb9mZ0cki3uxz+DWl9nq+/0oA6M699LbN0CC5BwcfrXT/KXYHAu4xaBHjnps92SYstCY6nHXBo+1Mxxk1ZnrcXxgP7ieE5v4L7HYt5hOS8iQ6KEd/sHAdEvvPF38zj2/wivVir14NbQAU+/8kE2fsjgQnb4hx22O/81bA3DHPQx0x5rI7SZdnQJvLcp3ZdQkFnilz2cngt5O/2psWB1jh+w9sOI3H02oyiahGfrXa/9aPbijFQ5ZgGGHI9a3REWp13Tb+5D9fciY4Zp8UCuX+h70S09l2BuuolhZcuQN2OfIfS1KRmyHPFKkf4bfy6xbOsN/IJ4v5/r8ohGbPERtDRAgKoJ7T6yV347J9MtF7QgiTq1cD+iL/ibMMV7pnkm+fCUFKinaM6F4cv1Sq7p3I85hSj0uHzXDdQsmMSjZ+St8fnWOYvzm9ouyaP8FJZ1mwTu/3/ZaCXLXI7zMrEqp49vczqnxfhWT5/VsxKvErRiH/1U8p/quSMiiwX7id80N9P/jjUxk/pxiV+BWjEr9iVOJXjEr8ipGy/6okKYX8V2nrlyVlELH/+PplOf94DZ3pvyopRuX8txiV+BWjEr9iVOJXjPLwy/wk5/8npeAnt5/b1ZKi1Ijilz1/O3h6SVGylmfgVwuH9CkJqH9G++MfXgUfJprRyxilPlVgcFYSSVoFoUzJg3OFim8DzPO/fOcQaj8YJdEo8StGpf+qGAX4/fPin34LurEuSv9VASrj3xejcv5bjEr8ilGJXzEq8StGJX7FKNC/5fr5a6g8f6sYlfs3itEr8VPeax2OG5l4hlPDYr4BRUrFZmas8yzKzvkK/EynR4l/f/96Dw0ezjuqkdXP5Gw6jnvj+mFLcXs+l319qkDbzvzXDETOxw9PB/Tk293otpodwb6CncyYHb090tvv0QKNTefUtFrH1e4TExA+JUuLoJtNEC3vj4zP+s/XH8ZAfBKm2Va9kRIXiko9bDalwa859e4Ifm8/2mK30xLfoNqrPvsUXiuAX10JP+6HUcLPsyyr5YGQoXjtCYLAFvcZZb8Tfg582eqt61eDiY5Y3D2IkfNe+J17fiPgd7uAiM/t+RhBJA15uloNQrF9e/zcOkL6aOP0DMd5Gs1aFL/3a39n+68APyYLNpY7DWm+YOyTQDEk1io9wK9nGPwOps+NYMhk+JmhPKFk4XUabMRvYVoUizYcHUDgk19dfMONjeof9Itthl8tJKcRRH0jGpabCWbIIIBUpMh8/M6cvwX4QQjJAe8hpPSb4Wg/aa53IsjJdn5C2t2cEFNgm+5uPZnsR9dCHMCv4XTuJpNB3xXfXrrtPwer5uTUWfpVMdqE8WR1mlf9O405ubOfw9frMfzcJkKjnn+JKZdw+zNvuqfJZP27f/bIdu5r2Om8U+EWhTskqU7dRdv2I7++PX4VvPGQfWmSOuDDkQ/a9h2Np4uvkYi+BHHT8NATYzqPL0Hx+++K3RvwT6eNP8QnzJYI2hJ8az3bsiCQ7mjGbrSmRiX6GSEEj46FpqxF8DP7R77Qs2ML4fjab2HuSkTVwssTK3T93/dsfzR6Hvs0mzR0e3za7R7ImH1HhTg8fNW08QMhCKph3iP9a320m9gQGNvHb4yer0Z3Oo32AC3JmaDWw240eEYiih2EgtEfRqPdg2ez4CbujgD+sANWiRhOELHkLtFeBH7kNVfJa3yujx4IPCyCG8evFuBH5IAASPrdqN5CX98XP4hJwI4LaMy3C8cwnM0EaeyT80VX0+7h8AAaoKHfuYHvkhfVFmtHFD+ETguS50tLhHPGf/Ypl8Wjxk9OIYjO2gv4UNtl5xhBuKDmE7mzGOqJsLbwPu8TmiJofxAK6IqUsIDg+xAOj+LHkfTbn3mpIavhEDHg+//36r81HvuIhxAQ40tD5zUP6d9a8NwAVA2B3zP0tZpBBv0158JHfiK5d8MlXPPYlzS4EoSj9KjZXXPmCbPYIcPfZTTgTBg/AIYGl6KR0mlMXYYfG/MEfuQHCwAMRwso6l8Go5a7fhltfxAvu7nk5weY9GP+z000juPHv76Hx4vPOj/RA/DjQVUcyw/IybksHpFGw0C5FrJuwmEpyAhX77FNFYeP8eN9INpoMlKGj1/IeLixYK4Qbn8+fvigQwBIWttdDn5nn98Yw29K8aMPDhDMYdz8qqPWMo4foHc9P62a469kRNkL/Oy/GCfnTgQIwcvL39cQueEZabQhwVD0POpvHJOpaBjhHtvXhKrXZCyYhCtXY/il91/SPKGCNDACsQ7+ZVak+A398JYQLE9t/qY6/42Nf9ANaIdw74WCRVwDRvDDmyvdf74W+LFIY6QDj3i3w9XQoVp08ocboDBtbz1noWV6dTJxFKShoxuxYMhoKbGUA/xaPPgJiy0G0knwg4mTCAvzojp/ex1+zo4etAYi2shej+47nVtLhh8cAeTdjTqd7r0ewq/tV4aiRQNRja/mJNmA41fB2x2bz7JgqXA6SGg73ioaBxpa6y5R3wA/DyLb+kUK/GL2C7gb/jS/CX5grtJI9BvyZttEc5rmoinBD6ScbBzy2PhfCD+bh3wxrlhvhcb1uAAuvbnADyYbjfs7CLc9ZUnQX24Q3zUsW40iNUn4NAL8rKD97XhoYEn7I52WD8xmnv1XDD+ItElz4E/CTocwsEn8Ag8SvFEfPxpcu0KDqNsQ3swR2NOGNBVqHhx6yysaRJ4exjT39UlcWAghbYejNeMofhP/IAR3DaMv0R8Nm+gzWsjyyMc/UhmulyCnGn6v0B/YAPVOS4Ihlw0ZEB1S4KcFUf9HXJ1CqLoAP36sGl56zJJxjzxOFyZql+LnNyWISQl7Z2FGOkl3+oB4q8/sMWHsXtcqIf8LqFMWih0i3XoQwxwfZvS9sJbI8COzqhYzp5xTnv6Ntj9NDb8e6YfEVIZD7NgBi/DK9gsM08sm6A+KJLE0rhZgaBA7kbS/x14FEy3shfHTqwa5udixUatG2ofXgE61GAn9UTsY9KxWk1RqDLMDiJE/WtBCTWO7jXvqyQiK9huDZIEjrerHJVipAj98rSPviRZQ5/G4K8sxmpEyiRR7ERUZ6vgIZr/R13PtF47fOfbzVbfT6ezu4DxMix9ssnlG9uON61aJ6UljKbPX6N2/vLwc+Lud3rg3w5Z2EeB3obX6rrt5tNGMHm8Dg9tDg9zZgW6lGuXpeBo+wXlnJ25UwBTMHrSXJNXLVSvhXIfDzZA1qj5tnl52LRTzX0GQ5PHLDRTAz9ijbXLSvlm27zTe/iq4TUaBOUjraTn991X+K5/0uojJCyKiVtOy0cNEjGEgGfgQ4D3TI/isJtGkv3gh/fsL3CQtkp8YgA9EHn18nKHZb1wjP5EJs2c1LYJKkx30A9Ewkd06WuDBTRrLRt+iBo83g/h2JzrtoKMvG+NW5JlFCkC6UE9wXJrdatlwXhr3H0AodKgNkTbHf3/W/A2CLBk7ZjjMWuN95xBMDIwOc0jXP+9tXtGKO296um5D18TLnQ718eb/s+wTm78N7NaXOeTSrEvuSMFtGkPOnlS7uk4twuWpZdPAfN7AP1mzcaJlabZ1JVmAMjcji2axZ+shm89OdR+t5Y7mtVe+mW2yMnWQnH6dAAdhTS0q7f0Xz/79Tf0Hle2B0nbjisP0+NFH29vRqNMw8PbgV4qMkZCU/W50Ro/TrVERN4ATmbXcjh4vl6Zgg93+4+i+75q1w4HxdZbV20eWUxA2DlNy6/Z6Kaka1H75qTMibA9i/aomyoSH2y4p4VNIBbEy20YlJLm5mY5Gt1za9OXa1+x/EXv6E/f5gdvRJ0FC+pzd8p/RkHjRZWCSit4I2GB6K8o1eUuQmIv3Ig7rqIfbiC0ciqPCY6nEvfQ1snL/UDEq8StGCuc3lpRB4vxGdf9VSWEq918VoxK/YlTiV4xK/IpRiV8xKr+/LEb55zeWlEXl94PFqJy/FaMSv2Ikwe97i/S3Igl+2ceolxShzwn8/qJ7S67bjK4Fxa6VLttKT1/FOrukN+GllPoL07/B+Y0fPjKaMfr4UX5d5PKfxOvjh9j5jRe8HYqT3vjlBX/MLz/wyw/Sy59ivFAmr2zWKbxiYr4lrzOr/DO7FuvnPjNOghmf3vnMpJe+nOwym1cg5yt4XRTh9UHOKy6mnNdPcl4lfj88foXqXOL3t8Mvs8oJ/OJysgMC1V5GXp2lvF6JH4pcXiiJmYLfq6qcwuv/AM0BGKkk3GQTAAAAAElFTkSuQmCC"
               class="rounded mx-auto d-block" alt="..." width="250px" height="200px">
           </div>
         </div>
         <div class="row">
-          <h3>Cloud Ready</h3>
+          <h4>Cloud Ready</h4>
         </div>
       </div>
     </section>
@@ -368,7 +393,7 @@ draft: false
             <img
               src="https://assets-global.website-files.com/5debb9b4f88fbc3f702d579e/5e3c1a71724a38245aa43b02_99bf70d46cc247be878de9d3a88f0c44.png"
               class="rounded mx-auto d-block" alt="...">
-            <h3 class="text-success">Structured</h3>
+            <h4 class="text-success">Structured</h4>
           </div>
         </div>
       </div>
@@ -377,8 +402,27 @@ draft: false
     <section>
       <div class="container">
         <div class="row">
+          <div class="col-6">
+            <img src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png"
+              class="rounded mx-auto d-block" alt="..." width="350px" height="250px">
+          </div>
+
+          <div class="col-6">
+            <img src="data:image/png;base64,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" class="rounded mx-auto d-block" alt="..." width="250px" height="200px">
+          </div>
+        </div>
+        
+        <div class="row">
+          <h4>Type <u>(is)</u> Safety</h4>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
           <div class="col-sm">
-            <h3>Our Approches Today</h3>
+            <h4>Our Approches <u>Today</u></h4>
           </div>
         </div>
       </div>
@@ -441,7 +485,7 @@ draft: false
           <div class="col-sm">
             <img src="https://cambridgewords.files.wordpress.com/2017/11/magic-wand.jpg" class="rounded mx-auto d-block"
               alt="...">
-            <h3>REST and GraphQL</h3>
+            <h4>REST and GraphQL</h4>
           </div>
         </div>
       </div>
@@ -450,16 +494,71 @@ draft: false
       <pre>
         <code data-trim data-noescape>
         SELECT 
-          ACT_ID, ACT_NAME 
+          *
         FROM 
-          TM_ACT 
+          MOVIE 
         WHERE 
-          ACT_ID = <span class="text-primary">{</span>actorId<span class="text-primary">}</span>
+          DIRECTED_BY = <span class="text-primary">{</span>director<span class="text-primary">}</span>
       </code>
-      <h3>What we want to do ?</h3>
     </pre>
+      <h4><u>what</u> do we want to ?</h4>
     </section>
 
+    <section>
+      <pre>
+        <code data-trim data-noescape>
+          movieStore.select(
+            directedBy().eq(<span class="text-primary">{</span>"Christopher Nolan"<span class="text-primary">}</span>)
+          );
+      </code>
+    </pre>
+      <h4><u>how</u> do we to do ?</h4>
+    </section>
+
+    <section>
+      <p class="text-success">Development</p>
+      <h4><u>when</u> do we do?</h4>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img src="https://i.pinimg.com/564x/43/46/0e/43460e8924bd9b729ac9ca7aa7dbf197.jpg"
+              class="rounded mx-auto d-block" alt="..." width="350px" height="250px">
+          </div>
+
+          <div class="col-6">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQUAAADBCAMAAADxRlW1AAABGlBMVEX///8AAABGlevw8PDi4uIJExM0juo9kera6Pqdw/P/AEpKl+uYvvJUm+wABweeoKDV1tYADg4uNDRVWVkUHR0cIyNFSkp+goT/ADQAExDJysqmqKivsbKGiYs2j+qRk5P/n7GnyPRrbm4zY5aZDTA2Ozu9v8D/AD/t7e3R0tLc3d2Zm5uNkJLU5PpvcnJ8f3+91vd/svBopu7m7/z/8vX/ydTx9v3/AESxz/U+QkJYXFxgoe15r+//gJn/ACT/uMYchun/P2n/2eH/cIzHAC8rECYlbrPoCUZUEyIaM0pAhtKDEi4nTXSuEDnIAAsvEBgNHyoAZLILUo2RAAb/IVj/U3f/6O1leZuaSVsjFRq3ADA1b6r/h57/ma1t+4IkAAAKdUlEQVR4nO2biXbiOBaGpZilkqrYEAJOvECFFC4DTsjSnapQ3TM9M73Ovvas/f6vMfptgyVDDEoKT018/3MS0LWFpM/S1ZUtsxojGYwoEIVERAEiChBRgIgCRBQgogARBYgoQEQBIgoQUYCIAkQUIKIAEQWIKEBEASIKEFGAiAJEFCCiABEFiChARAEiChBRgIgCRBQgogARBYgoQEQBIgoQUYCIAkQUIKIAEQWIKEBEASIKUMkUbq/O9rfS+9syq1UqhavDRr+5nfqNw6vyKlYmhS8aezpq3JRWsxIpfGhqQdjbax6WVbXyKFzrQhAYrkuqW2kUXqTDYUu/kA6Ki3IqVxqFpCs0m6+2015y+hflVK40CklH+LD1+TcJhh3WSFJZFO7iAdHYPgq47WtmeIrKopC4hZcaOQ5jCi92ViNZ/0sKX+bO2VdSVaHws4OfS6mLl18pR6tC4eTg5Be/TL/f3jT2GsrR6lA4eHfyq8/w9VVDTAmVpSA4vP2JvU+ipApTODj4+ptv00hROVopCt99f9rmP/y62hR+c3par9dN/tuX1aXwu5hBPeZwXlEKv//DEoIQ/+OflKNVoRCc8rpEoR0oR6tB4dWfZ2zKFxw4HxjRX778LDteBQpXzeY5554x5KZg0OZzI+D8zbu3r5dnPH8KLz6I5Dlv86NWbYSPyUR8nL45OHj718/Tc547hbvkZvQ5TztBO+0SoCBi6r/9GJ/1zCnsN5K7iuc8dQgL9xBTAId4yf3MKdxeJxjOU8/IDd6uZxQWneGZU0jdgkyhnlFYOoZnTyGeItZSeJtNEhWgAO+whsKJdBOuEhTY3d/5qUqB/+NH6Xg1KLDXX//zVKLAj789kw9XhcLbgzdYTsUUsKZsVpRCfH8BM2V8f6G6FA6++15QSO41VZjCwbt/Gf+On8ZVmMK7k/+Ir2dxNFlVCsulk1hgNatKIVtGx1F1JSn8dPI6+ZJuWLnqK49rK0Lh8/T22t1Xd6lF2b9TEQoL7TferzNXjEJ//Y6+alE4a67fylYtCs0H9jVWisJ7xI2Nu9UDlaLwcjV2TvQcKdzGFFa3L16lS4jVHM1nSIHFrW2+ypvjK75uq+9ZQmHNUNmBSqOQ7GXtX1+8kHT7PukKe830LYDFgYvr5MD2e2WfpNIoXCW7wZv9hqzlPvl0k+tNau8nB/pr46mPr/LeDDgsfDMgHSsX6oskOntln6LyKNwWvymT+sdD2VbSLuhS35V50S/qDf3kNamFowCXst6OKPe9KdxKeRDE4qWB5cskjZty5geo3DcJb/dvDh/SXhIavEpSN/vlRAqJ6K1SiChARAEiChBRgIgCRBQgogARBYgoQEQBIgoQUYCIAkQUIKIAEQWIKECPomAEg8vh0PfCnN1xHDnZUpOQ5eaLqzmJxuGK3VgmwuyXc2WM1WRcM3saGExLj6AQXvKFOi3lSJdzOdlTk0Ie55c503T5Y+3LmmofLytpcr5oLFd/dKQk/eWP3a9cgCLpUwjiUnqdThefA/nQkanUsLNCoWfW8yaL15dV565s50vE3QwCOza7yi/ydpa45yav9zoj/JR6fTZIm0LA27yTXKUwEt8j6dgmCjVeb3NPtVnpNa8Fc8HDke2LhohWZS+cFlCwuXmU5GkN7jWapE8hFA23lqmJSEldbxMFn9/P+JFqk1o75eZojb2n9JECCqIy2zYjJ10Kc85tKTnm7eMstYmCGEAO5xPFpvT8NjdW7KLEqXT+wxRqatV0pEmhluc9lHvrBgoBCHA+U4wyhZmEaGEXrtiXz3+YwiTnpTSkScHKl9TifL5MbKDQw2iY5Yw5Cq2cPcpTe5hCKFdFT5oU5ivOV+4cxRREj7VibIp/lCmIjhWqdvF/qJZX4BfEgNKaGTJpUuiuOKCOVPNiCmIyx6g/4or/lilw81i1i/iikyuvgIInrojLHiNNCrzdzVlmUnRTTCHtsJbqHyUKQ3kywGmOPGmkKooXLgWGY0szboS0KeSrFUnusZBCkIY+huruRGuDmtDY6iq9X9gtLoKsfB8vosBcLuIm3gmYpnQpmPlwZCDFdYUUlvH0XDHLsaOVt494W24kVEhBVMfEDx2NmZa0+0Iu6MGI2IqC8I1pmBnIk+uSgpnjC/sMgyTn9zdQEMutITrElOlIk0J9xTsOpWFeRGHA62Z6yetmL7NjRBhhaPQk/5LaMSd3TaWHbEFBTJlDJRbfQpoUeibPrYDleK+IQrudLZrqPCt04R1rYhEgZ06dKMI0JdjcggIyy6A3S5OCr/Rm5Jfd+EilICfFMJi5qQayf1zOEbO8X0jsnhKjY2lVl5P3anKh3PXYJE0KY7GmVgyWHOUP81NjBkjpF13TlH8gnQa41Ksk+6UaOA25fNYad704K38LqEi6q6luWx1xStUtpaeMpUseKoGwfF5GwVU8YWYX19Vdn1ctQ9Zw5dZGoXQpBOoVmyu1CJWg6t7MRvRACZUMKSSUoibR3HX3F7CYzyqpljEyc0vUVDkns0nad1mGPKtrKBy7UpoY270Fo7nck+tcibbmWYeVKCjLdMkecNkjooxF5o5chpMFWB2em1k2SP+O21xcmtEgcBxXtIV31Xj1XpguPcfxRF2lhju5JZSTLU1zq6nlijW31pRuV47Wl8Gm/HhoBalda4p4zN1XaznjmblVL4sbspBU8Y7q0tA3FuPWku+yily1zJ5d25FCcX0ZGHVr7VvoMXfiDXeOyb9t9tYsXCazI1Rj5Mt+4L6T82Fur5e20ev1JpK5s7hdpNjDXkcua10ZohRvGJv5yF7rK4pa9OinMuGj17E71SNWlE96NtUSMaC3+bT/Bz3lCV3wbDA86Tkl1n3aa/lPUU97Wos56TlgeOIz61arpXlD45MUPbmHiAJEFCCiABEFiChARAEiChBRgIgCRBQgogARBYgoQEQBIgoQUYCIAkQUIKIAEQWIKEBEASIKEFGAdkMhCIJWLTCY47AxnuBl7wEGY8ZawhS0GJsEDv7hvxOwWhDi3GAivjnYshOk71PFidBBjiT/x9duKNhRFIxnIRtMmYdtGYN0N2BkD+zEZHuMTSPxJbA932JWxPDfZ8bMqdkDH4/C43+BHfn2hDm2H0WL/B9fO6IgLqpjJxSwi2WaVN2xW6JZtcCPm2jY4ziNU6xp4BtgYdhOy056ToLCiv/8aZJ/gvwfv767oeBH/nhsG2i9TCEQpprdSik4NrNcFvie74he4LsspcAsO0KlQMEAz+lAYJ34fpjm//j13REF1wnHoi9EVkoh2XfniOs4Fn3BjpsoWu77MYVQtB/X2PVjCiyMQC3uC7Yb9wXxIX4P+R3tTUtbaHcjwrAjSzTJ812rNo1cvMJiiCvuR2xiD6aiLbY7DuyJQDKN0AtEyx1buArDidxkMIhMovtYg3jcTC27hvx2tLF0fe2GggtPHnqe+HA8z60F4h+2XRnBFMN64nliJsCL567TclnoTgKPtUS65Xk15IsdgycyMTbGufGHY4j83k42jZQeL4iLXW6B26j8qOkThECxYyyiABEFiChARAEiChBRgIgCRBQgogAZ/wUajtYqWjkCxwAAAABJRU5ErkJggg==" class="rounded mx-auto d-block" alt="..." width="250px" height="200px">
+          </div>
+        </div>
+
+        <div class="row">
+        
+          <div class="col-6">
+            <img src="/images/jooq.png" class="rounded mx-auto d-block" alt="..." width="150px" height="100px">
+          </div>
+          <div class="col-6 mt-3 pt-3">
+            <h6>Project Lombok</h6>
+          </div>
+
+        </div>
+        
+        <div class="row">
+          <h4>There is something <strong class="text-success">common</strong> <u>NOW</u>  </h4>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h4>Controlled <strong class="text-success">Compiletime</strong> environment</h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </div>
 </div>
