@@ -1,0 +1,29 @@
+[en]
+  languageName = "English"
+  contentDir = "content/en"
+  weight = 10
+  [en.params]
+    languageISO = "EN"
+    languageTag = "en-US"
+    alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/example-post/">SQL Components version 1.0 just shipped!</a>'
+
+[de]
+  languageName = "German"
+  contentDir = "content/de"
+  weight = 15
+  [de.params]
+    languageISO = "DE"
+    languageTag = "de-DE"
+    alertText = 'Neue Version ist da! <a class="alert-link stretched-link" href="https://getdoks.org/blog/doks-v0.5/">SQL Components v0.5</a>'
+
+[nl]
+  languageName = "Nederlands"
+  contentDir = "content/nl"
+  weight = 20
+  [nl.params]
+    languageISO = "NL"
+    languageTag = "nl-NL"
+    titleAddition = "Modern documentatie-thema"
+    description = "SQL Components is een Hugo-thema waarmee je moderne documentatie-websites kunt bouwen die veilig, snel en klaar voor SEO zijn — standaard."
+    titleHome = "SQL Components thema"
+    alertText = 'Introductie van het SQL Components-kinderthema, verschillende DX + UX-updates en meer! <a class="alert-link stretched-link" href="https://getdoks.org/blog/doks-v0.2/">Bekijk SQL Components v0.2</a>'
