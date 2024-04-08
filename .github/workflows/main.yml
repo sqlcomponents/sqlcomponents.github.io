@@ -28,6 +28,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
+        sed -i 's/http:\/\/:localhost:1313//g' public/*.*
         echo 'sqlcomponents.org' > public/CNAME
       env:
         CI: true
