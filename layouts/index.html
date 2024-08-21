@@ -6,7 +6,10 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/quick-start/" role="button">{{ i18n "get_started" }}</a>
+      <a class="btn btn-secondary btn-cta rounded-pill btn-lg my-3" href="https://www.youtube.com/watch?v=KgfnTFI55dc&list=PLEtabm0XBc0R6e8M8GxfIkpWKtTNSqQ9V&index=5" role="button">Watch Video</a>
+
+      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/quick-start/" role="button">Getting Started</a>
+
       {{ .Content }}
     </div>
   </div>
@@ -24,20 +27,20 @@
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-lg-5">
-          <h2 class="h4">Flexible</h2>
-          <p>Why choose beween <code>ORM or SQl Mapper</code> when you can have Both?</p>
+          <h2 class="h4">Unified Persistence</h2>
+          <p>Experience the flexibility of SQL Mappers with the robustness of ORM in a single framework. Why compromise when you can harness the strengths of both?</p>
         </div>
         <div class="col-lg-5">
-          <h2 class="h4">Write Less, Do More</h2>
-          <p>Develop Applications faster with automated code generation</p>
+          <h2 class="h4">Turbocharged Development</h2>
+          <p>Accelerate your development process with automated code generation, reducing manual effort and boosting productivity. SQLComponents lets you build applications faster and smarter.</p>
         </div>
         <div class="col-lg-5">
           <h2 class="h4">Simply SQL</h2>
-          <p>Alll you need to learn is SQL.</p>
+          <p>Unleash the full power of SQL without traditional ORM limitations. With SQLComponents, all you need to work with SQL is just SQL.</p>
         </div>
         <div class="col-lg-5">
           <h2 class="h4">Type Safety</h2>
-          <p>Captures the defects at as you write code with compile time type safety</p>
+          <p>Ensure robust code with compile-time checks, catching issues before they reach runtime. SQLComponents guarantees safer, more reliable SQL development.</p>
         </div>
       </div>
     </div>
