@@ -19,6 +19,7 @@
       "h1",
       "h2",
       "h3",
+      "h4",
       "h5",
       "head",
       "header",
@@ -240,8 +241,14 @@
     "ids": [
       "TableOfContents",
       "buttonColorMode",
+      "custom-code-generation",
       "doks-docs-nav",
+      "expand-the-frameworks-compatibility-to-include-oracle-and-sql-server-enabling-seamless-integration-with-a-broader-range-of-database-systems",
       "further-reading",
+      "geo-location-datatypes-support",
+      "implement-custom-code-generation-features-to-automate-and-standardize-repetitive-coding-tasks-enhancing-productivity-and-reducing-manual-errors",
+      "integrate-transaction-support-to-ensure-data-consistency-and-reliability-during-complex-operations-by-managing-and-safeguarding-multiple-changes-within-a-single-transaction",
+      "introduce-support-for-geo-location-data-types-allowing-the-handling-and-processing-of-spatial-data-directly-within-the-framework",
       "offcanvasNavMain",
       "offcanvasNavMainLabel",
       "offcanvasNavSection",
@@ -254,7 +261,9 @@
       "searchToggleDesktop",
       "searchToggleMobile",
       "socialMenu",
-      "toc"
+      "support-for-oracle-and-sql-server",
+      "toc",
+      "transaction-support"
     ]
   }
 }

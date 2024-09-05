@@ -1,21 +1,19 @@
 ---
-title: "Reference"
-description: ""
+title: "JPA"
+description: "Reference pages are ideal for outlining how things work in terse and clear terms."
 summary: ""
-date: 2023-09-07T16:12:37+02:00
-lastmod: 2023-09-07T16:12:37+02:00
+date: 2023-09-07T16:13:18+02:00
+lastmod: 2023-09-07T16:13:18+02:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "reference-22e9ba8aefa7ef9891199cf8db3a08cd"
-weight: 3
+weight: 2
 toc: true
-sidebar:
-  collapsed: true
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
+
+
+Spring JDBC Template
+

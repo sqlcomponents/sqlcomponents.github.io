@@ -6,9 +6,9 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-secondary btn-cta rounded-pill btn-lg my-3" href="https://www.youtube.com/watch?v=KgfnTFI55dc&list=PLEtabm0XBc0R6e8M8GxfIkpWKtTNSqQ9V&index=5" role="button">Watch Video</a>
+      <a class="btn btn-secondary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}why/" role="button">Why SQL Components?</a>
 
-      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/instalation/" role="button">Getting Started</a>
+      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/" role="button">Getting Started</a>
 
       {{ .Content }}
     </div>
