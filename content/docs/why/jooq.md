@@ -15,5 +15,7 @@ seo:
 ---
 
 
-Spring JDBC Template
+1. Native Code
+2. Simple, Human Readable Code
+3. Quality Code
 
