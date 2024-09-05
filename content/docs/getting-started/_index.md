@@ -1,5 +1,5 @@
 ---
-title: "API Guide"
+title: "Getting Started"
 description: ""
 summary: ""
 date: 2023-09-07T16:06:50+02:00
@@ -9,7 +9,7 @@ menu:
   docs:
     parent: ""
     identifier: "guides-4e0d0e0f89f7decc11eaad4ae9193018"
-weight: 3
+weight: 2
 toc: true
 seo:
   title: "" # custom title (optional)
@@ -17,5 +17,3 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
-
-API Guide
