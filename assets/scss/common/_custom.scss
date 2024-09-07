@@ -1,5 +1,5 @@
 // Put your custom SCSS code here
-
+//Header
 header.navbar {
     background-color: #262829;
     
@@ -9,6 +9,17 @@ li.nav-item a.nav-link, #buttonColorMode, #searchToggleDesktop {
     color: #FFFFFF;
 }
 
+.navbar-brand > img {
+    height: 40px;
+}
+
+//section
+.container-lg{
+    background: url("../../section_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 a.rounded-pill{
   color: #fff !important;
   border-radius: 8px !important;
@@ -19,10 +30,8 @@ section.section-features>.container>.row>.col-lg-5 {
     border-radius: 8px;
 }
 
-.navbar-brand > img {
-    height: 40px;
-}
 
+//footer
 footer {
   background-color: #262829;
 }
