@@ -1,4 +1,5 @@
 // Put your custom SCSS code here
+
 header.navbar {
     background-color: #262829;
     
@@ -8,10 +9,23 @@ li.nav-item a.nav-link, #buttonColorMode, #searchToggleDesktop {
     color: #FFFFFF;
 }
 
+a.rounded-pill{
+  color: #fff !important;
+  border-radius: 8px !important;
+}
 section.section-features>.container>.row>.col-lg-5 {
     background-color: #F5F4F4;
+    margin: 10px;
+    border-radius: 8px;
 }
 
 .navbar-brand > img {
     height: 40px;
+}
+
+footer {
+  background-color: #262829;
+}
+footer .text-muted{
+  color: #fff !important;
 }
