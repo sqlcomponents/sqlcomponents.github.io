@@ -24,12 +24,18 @@ a.rounded-pill{
   color: #fff !important;
   border-radius: 8px !important;
 }
+[data-bs-theme="dark"] .btn-primary {
+  background-color: #1d9de6 !important;
+  border: #1d9de6;
+}
 section.section-features>.container>.row>.col-lg-5 {
     background-color: #F5F4F4;
     margin: 10px;
     border-radius: 8px;
 }
-
+[data-bs-theme="dark"] .section.section-features>.container>.row>.col-lg-5 {
+    background-color: #000000; 
+}
 
 //footer
 footer {
