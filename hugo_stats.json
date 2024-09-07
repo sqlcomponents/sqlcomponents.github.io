@@ -11,6 +11,7 @@
       "code",
       "details",
       "div",
+      "em",
       "figcaption",
       "figure",
       "footer",
@@ -23,6 +24,7 @@
       "h5",
       "head",
       "header",
+      "hr",
       "html",
       "img",
       "input",
@@ -47,9 +49,15 @@
       "style",
       "summary",
       "svg",
+      "table",
+      "tbody",
+      "td",
       "template",
+      "th",
+      "thead",
       "time",
       "title",
+      "tr",
       "ul"
     ],
     "classes": [
@@ -240,9 +248,25 @@
       "wrap"
     ],
     "ids": [
+      "1-query-handling",
+      "2-learning-curve",
+      "3-control-over-sql",
       "TableOfContents",
+      "advantages-and-disadvantages-of-jpa",
+      "advantages-and-disadvantages-of-mysqlcomponents",
+      "advantages-of-jooq",
+      "advantages-of-jpa",
+      "advantages-of-mysqlcomponents",
+      "advantages-of-sqlcomponents",
       "buttonColorMode",
+      "comparison-with-jooq-framework",
+      "comparison-with-jpa-java-persistence-api",
+      "conclusion",
       "custom-code-generation",
+      "disadvantages-of-jooq",
+      "disadvantages-of-jpa",
+      "disadvantages-of-mysqlcomponents",
+      "disadvantages-of-sqlcomponents",
       "doks-docs-nav",
       "expand-the-frameworks-compatibility-to-include-oracle-and-sql-server-enabling-seamless-integration-with-a-broader-range-of-database-systems",
       "further-reading",
@@ -250,6 +274,7 @@
       "implement-custom-code-generation-features-to-automate-and-standardize-repetitive-coding-tasks-enhancing-productivity-and-reducing-manual-errors",
       "integrate-transaction-support-to-ensure-data-consistency-and-reliability-during-complex-operations-by-managing-and-safeguarding-multiple-changes-within-a-single-transaction",
       "introduce-support-for-geo-location-data-types-allowing-the-handling-and-processing-of-spatial-data-directly-within-the-framework",
+      "key-differences",
       "offcanvasNavMain",
       "offcanvasNavMainLabel",
       "offcanvasNavSection",
@@ -264,7 +289,8 @@
       "socialMenu",
       "support-for-oracle-and-sql-server",
       "toc",
-      "transaction-support"
+      "transaction-support",
+      "what-is-jooq"
     ]
   }
 }
