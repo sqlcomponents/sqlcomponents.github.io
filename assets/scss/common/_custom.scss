@@ -3,5 +3,15 @@
     height: 40px;
 }
 
+.offcanvas .nav-link, .offcanvas .banner .nav a, .banner .nav .offcanvas a{
+  color: $navbar-dark-color;
+}
 
+//footer
+footer {
+  background-color: #262829;
+}
+footer .text-muted{
+  color: #fff !important;
+}
 
