@@ -83,12 +83,15 @@
     </button>
 
     <!-- Main navigation -->
-    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+    <div class="offcanvas offcanvas-end h-auto bg-dark" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
       {{ if site.Params.doks.headerBar -}}
         <div class="header-bar d-lg-none"></div>
       {{ end -}}
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">{{ site.Title }}</h5>
+        <!-- <h5 class="offcanvas-title" id="offcanvasNavMainLabel">{{ site.Title }}</h5> -->
+        <a class="navbar-brand order-0 text-center" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Params.Title }}">
+          <img src="/images/logomobile.svg" alt="Open Component Model Logo" class="header-logo">
+        </a>
         <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -110,7 +113,7 @@
       </div>
       -->
       <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
-        <ul class="navbar-nav flex-grow-1 justify-content-end">
+        <ul class="navbar-nav flex-grow-1 justify-content-end pe-5">
           {{- $current := . -}}
           {{- $section := $current.Section -}}
           {{ range .Site.Menus.main -}}

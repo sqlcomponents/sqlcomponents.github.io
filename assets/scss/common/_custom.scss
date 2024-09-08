@@ -6,6 +6,9 @@
 .offcanvas .nav-link, .offcanvas .banner .nav a, .banner .nav .offcanvas a{
   color: $navbar-dark-color;
 }
+.navbar .btn-link, .nav a.nav-link {
+  color: #8DA5BB;
+}
 
 //footer
 footer {
@@ -16,6 +19,8 @@ footer .text-muted{
 }
 
 .bg-dots {
-  background-image: none;
-  background-color: #8DA5BB;
+  background: url(/images/section_bg.png) no-repeat left top, linear-gradient(#FFFFFF, #8893A2);
+  background-size: cover;
+  height: 26.375rem;
+  margin-top: -25rem;
 }
