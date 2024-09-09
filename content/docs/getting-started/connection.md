@@ -8,7 +8,7 @@ draft: false
 menu:
   docs:
     parent: ""
-    identifier: "example-6a1a6be4373e933280d78ea53de6158e"
+    identifier: "Connection"
 weight: 2
 toc: true
 seo:
@@ -18,17 +18,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Lets  connect to our database. First we need to add respective JDBC driver. for eg if we need to connect to postgres we need to add
-
-```xml
-    <dependency>
-        <groupId>org.postgresql</groupId>
-        <artifactId>postgresql</artifactId>
-        <version>${postgresql.version}</version>
-    </dependency>
-```
-
-Next, We need configure SQLComponents to connect to our database instance. we should create file named `sql-components.yml` with below details
+We need configure SQLComponents to connect to the database instance. we should create a file named `sql-components.yml` as given below
 
 ```yml
 # Connection Details
@@ -41,3 +31,11 @@ schemaName: "sampledb"
 # Mapping Logic
 rootPackage: "com.example"
 ```
+
+After this, you can build the project with
+
+```sh
+mvn clean package
+```
+
+once the build is suvvessful, you should see the generated code under `target > generated-sources`

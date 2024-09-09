@@ -8,7 +8,7 @@ draft: false
 menu:
   docs:
     parent: ""
-    identifier: "example-6a1a6be4373e933280d78ea53de6158e"
+    identifier: "installation"
 weight: 1
 toc: true
 seo:
@@ -18,7 +18,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-SQLComponents can be added as a build plugin. Also we need to add JDBC driver. for example if we need to work with postgres database we should add below under `build > plugins`
+In order to generate the code at compiletime, SQLComponents has to be added as a build plugin ( under  `build > plugins` in `pom.xml` ) along with the corresposing JDBC driver.
 
 ```xml
 <plugin>
