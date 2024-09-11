@@ -1,27 +1,11 @@
 ---
 title: "Why SQL Components"
-description: ""
-summary: ""
-date: 2023-09-07T16:12:37+02:00
-lastmod: 2023-09-07T16:12:37+02:00
-draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "why"
 weight: 1
 toc: true
-sidebar:
-  collapsed: true
-seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
 ---
 
 SQL Compomnents is a compile time tool that build native JDBC Code out of Relationsal database instance. It also provides type safe SQL Builder for safer, secure and productive persdiatnce development. Before we see how it is diffrent from others , We should understand what all we should do when we interact with relational databases from java.
 
-Connection Management
-Model
-Data Access Object
+1. Connection Management
+2. Model
+3. Data Access Object

@@ -1,21 +1,7 @@
 ---
 title: "Core Components"
-description: "Guides lead a user through a specific task they want to accomplish, often with a sequence of steps."
-summary: ""
-date: 2023-09-07T16:04:48+02:00
-lastmod: 2023-09-07T16:04:48+02:00
+weight: 9
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "CoreComponents"
-weight: 1
-toc: true
-seo:
-  title: "" # custom title (optional)
-  description: "" # custom description (recommended)
-  canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
 ---
 
 Lets  connect to our database. First we need to add respective JDBC driver. for eg if we need to connect to postgres we need to add

@@ -6,12 +6,18 @@
       <h2>{{ .Params.lead | safeHTML }}</h2>
 
       <p class="lead">
-        Offers zero-compromise, modern persistence solutions for Java developers, seamlessly integrating SQL into your applications. Future-ready and optimized for performance, it bridges the gap between powerful SQL operations and efficient, scalable Java code.
+        Offers zero-compromise, modern persistence solutions for Java developers, seamlessly integrating SQL into your
+        applications. Future-ready and optimized for performance, it bridges the gap between powerful SQL operations and
+        efficient, scalable Java code.
       </p>
 
-      <a class="btn btn-secondary btn-cta btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}why/" role="button">Why SQL Components?</a>
+      <a class="btn btn-secondary btn-cta btn-lg my-3"
+        href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}why/"
+        role="button">Why SQL Components?</a>
 
-      <a class="btn btn-primary btn-cta btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}getting-started/" role="button">Getting Started</a>
+      <a class="btn btn-primary btn-cta btn-lg my-3"
+        href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}getting-started/"
+        role="button">Getting Started</a>
 
       {{ .Content }}
     </div>
@@ -20,43 +26,47 @@
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
-  {{ if site.Params.doks.backgroundDots -}}
-  <div class="d-flex justify-content-start">
-    <div class="bg-dots"></div>
-  </div>
-  {{ end -}}
-  {{ if eq $.Site.Language.LanguageName "English" }}
-  <section class="section section-md section-features">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5 m-2 px-2 bg-light rounded">
-          <h2 class="h4">Unified Persistence</h2>
-          <p>Experience the flexibility of SQL Mappers with the robustness of ORM in a single framework. Why compromise when you can harness the strengths of both?</p>
-        </div>
-        <div class="col-lg-5 m-2 px-2 bg-light rounded">
-          <h2 class="h4">Turbocharged Development</h2>
-          <p>Accelerate your development process with automated code generation, reducing manual effort and boosting productivity. SQLComponents lets you build applications faster and smarter.</p>
-        </div>
-        <div class="col-lg-5 m-2 px-2 bg-light rounded">
-          <h2 class="h4">Simply SQL</h2>
-          <p>Unleash the full power of SQL without traditional ORM limitations. With SQLComponents, all you need to work with SQL is just SQL.</p>
-        </div>
-        <div class="col-lg-5 m-2 px-2 bg-light rounded">
-          <h2 class="h4">Type Safety</h2>
-          <p>Ensure robust code with compile-time checks, catching issues before they reach runtime. SQLComponents guarantees safer, more reliable SQL development.</p>
-        </div>
+{{ if site.Params.doks.backgroundDots -}}
+<div class="d-flex justify-content-start">
+  <div class="bg-dots"></div>
+</div>
+{{ end -}}
+{{ if eq $.Site.Language.LanguageName "English" }}
+<section class="section section-md section-features">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-5 m-2 px-2 bg-light rounded">
+        <h2 class="h4">Unified Persistence</h2>
+        <p>Experience the flexibility of SQL Mappers with the robustness of ORM in a single framework. Why compromise
+          when you can harness the strengths of both?</p>
+      </div>
+      <div class="col-lg-5 m-2 px-2 bg-light rounded">
+        <h2 class="h4">Turbocharged Development</h2>
+        <p>Accelerate your development process with automated code generation, reducing manual effort and boosting
+          productivity. SQLComponents lets you build applications faster and smarter.</p>
+      </div>
+      <div class="col-lg-5 m-2 px-2 bg-light rounded">
+        <h2 class="h4">Type Safety</h2>
+        <p>Ensure robust code with compile-time checks, catching issues before they reach runtime. SQLComponents
+          guarantees safer, more reliable SQL development.</p>
+      </div>
+      <div class="col-lg-5 m-2 px-2 bg-light rounded">
+        <h2 class="h4">Simply SQL</h2>
+        <p>Unleash the full power of SQL without traditional ORM limitations. With SQLComponents, all you need to work
+          with SQL is just SQL.</p>
+      </div>
+      <div class="col-lg-5 m-2 px-2 bg-light rounded">
+        <h2 class="h4">Future-Proof</h2>
+        <p>
+          Code once, upgrade anytime. SQLComponents evolves with the latest versions of Java and databases
+          automatically—no more manual upgrades. Keep your applications modern without rewriting code.
 
-        <div class="col-lg-5 m-2 px-2 bg-light rounded">
-          <h2 class="h4">Future-Proof</h2>
-          <p>
-            Code once, upgrade anytime. SQLComponents evolves with the latest versions of Java and databases automatically—no more manual upgrades. Keep your applications modern without rewriting code.
-
-          </p>
-        </div>
+        </p>
       </div>
     </div>
-  </section>
-  {{ end }}
+  </div>
+</section>
+{{ end }}
 {{ end }}
 
 {{ define "sidebar-footer" }}
@@ -65,7 +75,9 @@
   <div class="row justify-content-center text-center">
     <div class="col-lg-7">
       <h2 class="mt-2">Start building with SQL Components today</h2>
-      <a class="btn btn-primary rounded-pill px-4 my-2" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
+      <a class="btn btn-primary rounded-pill px-4 my-2"
+        href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/"
+        role="button">{{ i18n "get-started" }}</a>
     </div>
   </div>
 </section>
