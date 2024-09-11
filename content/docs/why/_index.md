@@ -4,8 +4,36 @@ weight: 1
 toc: true
 ---
 
-SQL Compomnents is a compile time tool that build native JDBC Code out of Relationsal database instance. It also provides type safe SQL Builder for safer, secure and productive persdiatnce development. Before we see how it is diffrent from others , We should understand what all we should do when we interact with relational databases from java.
+Before diving into the "why," let’s first understand the problem SQL Components aims to solve.
 
-1. Connection Management
-2. Model
-3. Data Access Object
+Consider a simple Java application that connects to a relational database like PostgreSQL to create a movie store. The database schema looks like this:
+
+```sql
+CREATE TABLE movie (
+    id smallserial PRIMARY KEY,
+    title VARCHAR(80),
+    directed_by VARCHAR(80)
+);
+```
+
+Now, let's add some movies:
+
+```sql
+INSERT INTO movie (title, directed_by) VALUES
+('Inception', 'Christopher Nolan'),
+('The Dark Knight', 'Christopher Nolan'),
+('Interstellar', 'Christopher Nolan'),
+('Dunkirk', 'Christopher Nolan'),
+('Pulp Fiction', 'Quentin Tarantino'),
+('The Matrix', 'Lana Wachowski'),
+('Fight Club', 'David Fincher'),
+('The Social Network', 'David Fincher');
+```
+
+Suppose you want to list the movies directed by `Christopher Nolan`. As a Java developer, your responsibilities include:
+
+1. Managing database connections
+2. Creating model or DTO classes
+3. Implementing Data Access Objects (DAO)
+
+Over the years, various Java frameworks have addressed these challenges in different ways. In the following sections, we’ll explore how these frameworks approach the problem and how SQL Components provides a unique solution.

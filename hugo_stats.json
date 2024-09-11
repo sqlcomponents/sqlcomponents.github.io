@@ -11,7 +11,6 @@
       "code",
       "details",
       "div",
-      "em",
       "figcaption",
       "figure",
       "footer",
@@ -20,6 +19,7 @@
       "h1",
       "h2",
       "h3",
+      "h4",
       "h5",
       "head",
       "header",
@@ -151,6 +151,9 @@
       "justify-content-start",
       "lead",
       "list",
+      "list-group",
+      "list-group-item",
+      "list-group-numbered",
       "list-inline",
       "list-inline-item",
       "list-nested",
@@ -252,15 +255,8 @@
     ],
     "ids": [
       "TableOfContents",
-      "advantages-of-jooq",
-      "advantages-of-sqlcomponents",
       "buttonColorMode",
-      "comparison-with-jooq-framework",
-      "conclusion",
-      "disadvantages-of-jooq",
-      "disadvantages-of-sqlcomponents",
       "doks-docs-nav",
-      "key-differences",
       "offcanvasNavMain",
       "offcanvasNavSection",
       "offcanvasNavSectionLabel",
@@ -272,8 +268,10 @@
       "searchToggleDesktop",
       "searchToggleMobile",
       "socialMenu",
-      "toc",
-      "what-is-jooq"
+      "sql-components-a-simpler-flexible-alternative",
+      "sql-components-a-type-safe-alternative",
+      "sql-components-flexibility-beyond-orm",
+      "toc"
     ]
   }
 }
