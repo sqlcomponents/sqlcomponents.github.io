@@ -5,6 +5,7 @@
       "article",
       "aside",
       "base",
+      "blockquote",
       "body",
       "button",
       "circle",
@@ -23,6 +24,7 @@
       "h5",
       "head",
       "header",
+      "hr",
       "html",
       "img",
       "input",
@@ -253,7 +255,9 @@
     "ids": [
       "TableOfContents",
       "buttonColorMode",
+      "delete",
       "doks-docs-nav",
+      "insert",
       "offcanvasNavMain",
       "offcanvasNavSection",
       "offcanvasNavSectionLabel",
@@ -264,11 +268,14 @@
       "searchResults",
       "searchToggleDesktop",
       "searchToggleMobile",
+      "select",
       "socialMenu",
       "sql-components-a-simpler-flexible-alternative",
       "sql-components-a-type-safe-alternative",
       "sql-components-flexibility-beyond-orm",
-      "toc"
+      "toc",
+      "update",
+      "using-sql-components-to-call-stored-procedures"
     ]
   }
 }
