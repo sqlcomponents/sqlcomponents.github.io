@@ -25,6 +25,7 @@ jobs:
       uses: peaceiris/actions-hugo@v3
       with:
         hugo-version: 'latest'
+        extended: true
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
