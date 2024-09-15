@@ -13,9 +13,6 @@ url: "jdbc:postgresql://localhost:5432/sampledb"
 userName: "user"
 password: "password"
 schemaName: "sampledb"
-
-# Mapping Logic
-rootPackage: "com.example"
 ```
 
 After this, you can build the project with
