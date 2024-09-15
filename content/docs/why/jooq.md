@@ -33,7 +33,8 @@ Here’s how the same functionality looks with SQL Components:
 
 ```java
 List<Movie> movies = DataManager.getManager().getMovieStore()
-                        .select(directedBy().eq("Christopher Nolan"))
+                        .select()
+                            .where(directedBy().eq("Christopher Nolan"))
                         .returning();
 ```
 

@@ -59,7 +59,8 @@ In SQL Components, the same query to list movies directed by a particular direct
 
 ```java
 List<Movie> movies = DataManager.getManager().getMovieStore()
-                        .select(directedBy().eq("Christopher Nolan"))
+                        .select()
+                            .where(directedBy().eq("Christopher Nolan"))
                         .returning();
 ```
 

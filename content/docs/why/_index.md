@@ -6,7 +6,9 @@ toc: true
 
 Before diving into the "why," let’s first understand the problem SQL Components aims to solve.
 
-Consider a simple Java application that connects to a relational database like PostgreSQL to create a movie store. The database schema looks like this:
+> Consider a simple Java application that connects to a relational database like PostgreSQL to create a movie store.
+
+The database schema looks like this:
 
 ```sql
 CREATE TABLE movie (
@@ -20,14 +22,14 @@ Now, let's add some movies:
 
 ```sql
 INSERT INTO movie (title, directed_by) VALUES
-('Inception', 'Christopher Nolan'),
-('The Dark Knight', 'Christopher Nolan'),
-('Interstellar', 'Christopher Nolan'),
-('Dunkirk', 'Christopher Nolan'),
-('Pulp Fiction', 'Quentin Tarantino'),
-('The Matrix', 'Lana Wachowski'),
-('Fight Club', 'David Fincher'),
-('The Social Network', 'David Fincher');
+        ('Inception', 'Christopher Nolan'),
+        ('Pulp Fiction', 'Quentin Tarantino'),
+        ('The Matrix', 'Lana Wachowski'),
+        ('Dunkirk', 'Christopher Nolan'),
+        ('Fight Club', 'David Fincher'),
+        ('Interstellar', 'Christopher Nolan'),
+        ('The Social Network', 'David Fincher'),
+        ('The Dark Knight', 'Christopher Nolan');
 ```
 
 Suppose you want to list the movies directed by `Christopher Nolan`. As a Java developer, your responsibilities include:

@@ -55,7 +55,8 @@ While SQL Builders abstract connection management, **SQL Components** offers add
 
 ```java
 List<Movie> movies = DataManager.getManager().getMovieStore()
-                        .select(directedBy().eq("Christopher Nolan"))
+                        .select()
+                            .where(directedBy().eq("Christopher Nolan"))
                         .returning();
 ```
 
