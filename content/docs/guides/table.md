@@ -87,11 +87,11 @@ Update a record with multiple where clause
 ```java
 
 //  UPDATE movie 
-//      SET title='Fight Club', directed_by='Martyn Scorsese' 
+//      SET title='Blood Diamond', directed_by='Martyn Scorsese' 
 //      WHERE id=1 AND title='Fight Club'
 movieStore
     .update()
-            .set(new Movie(null, "Fight Club", "Martyn Scorsese"))
+            .set(new Movie(null, "Blood Diamond", "Martyn Scorsese"))
     .where(id().eq(1).and().title().eq("Fight Club"))
     .execute();
 ```
