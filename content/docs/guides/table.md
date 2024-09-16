@@ -27,6 +27,15 @@ movieStore
 We need to insert multiple records to the table.
 
 ```
+/**
+INSERT INTO movie (title, directed_by) VALUES
+        ('Pulp Fiction', 'Quentin Tarantino'),
+        ('The Matrix', 'Lana Wachowski'),
+        ('Dunkirk', 'Christopher Nolan'),
+        ('Fight Club', 'David Fincher'),
+        ('Interstellar', 'Christopher Nolan'),
+        ('The Social Network', 'David Fincher');
+*/
 movieStore
     .insert()
         .values(new Movie(null, "Pulp Fiction", "Quentin Tarantino"))
