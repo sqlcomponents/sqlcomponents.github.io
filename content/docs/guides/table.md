@@ -17,6 +17,7 @@ From here you can execute SQL Statements against the table as follows
 We need to insert a single record to the table.
 
 ```java
+// INSERT INTO movie VALUES('Inception', 'Christopher Nolan')
 movieStore
     .insert()
         .values(new Movie(null, "Inception", "Christopher Nolan"))
@@ -67,13 +68,31 @@ List<Movie> movies = movieStore
 
 ## Update
 
-Update a record
+Update a record with where clause
 
 ```java
+
+//  UPDATE movie 
+//      SET title='Fight Club', directed_by='Martyn Scorsese' 
+//      WHERE title='Fight Club'
 movieStore
     .update()
             .set(new Movie(null, "Fight Club", "Martyn Scorsese"))
     .where(title().eq("Fight Club"))
+    .execute();
+```
+
+Update a record with multiple where clause
+
+```java
+
+//  UPDATE movie 
+//      SET title='Fight Club', directed_by='Martyn Scorsese' 
+//      WHERE id=1 AND title='Fight Club'
+movieStore
+    .update()
+            .set(new Movie(null, "Fight Club", "Martyn Scorsese"))
+    .where(id().eq(1).and().title().eq("Fight Club"))
     .execute();
 ```
 
