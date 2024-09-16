@@ -12,7 +12,16 @@
 </span></span></span><span class=line><span class=cl><span class=w></span><span class=n>movieStore</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>.</span><span class=na>insert</span><span class=p>()</span><span class=w>
 </span></span></span><span class=line><span class=cl><span class=w>        </span><span class=p>.</span><span class=na>values</span><span class=p>(</span><span class=k>new</span><span class=w> </span><span class=n>Movie</span><span class=p>(</span><span class=kc>null</span><span class=p>,</span><span class=w> </span><span class=s>&#34;Inception&#34;</span><span class=p>,</span><span class=w> </span><span class=s>&#34;Christopher Nolan&#34;</span><span class=p>))</span><span class=w>
-</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>.</span><span class=na>execute</span><span class=p>();</span></span></span></code></pre></div></figure></div><p>We need to insert multiple records to the table.</p><div class=expressive-code><figure class="frame not-content"><figcaption class=header><span class=title></span></figcaption><pre tabindex=0><code>movieStore
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>.</span><span class=na>execute</span><span class=p>();</span></span></span></code></pre></div></figure></div><p>We need to insert multiple records to the table.</p><div class=expressive-code><figure class="frame not-content"><figcaption class=header><span class=title></span></figcaption><pre tabindex=0><code>/**
+INSERT INTO movie (title, directed_by) VALUES
+        (&#39;Pulp Fiction&#39;, &#39;Quentin Tarantino&#39;),
+        (&#39;The Matrix&#39;, &#39;Lana Wachowski&#39;),
+        (&#39;Dunkirk&#39;, &#39;Christopher Nolan&#39;),
+        (&#39;Fight Club&#39;, &#39;David Fincher&#39;),
+        (&#39;Interstellar&#39;, &#39;Christopher Nolan&#39;),
+        (&#39;The Social Network&#39;, &#39;David Fincher&#39;);
+*/
+movieStore
     .insert()
         .values(new Movie(null, &#34;Pulp Fiction&#34;, &#34;Quentin Tarantino&#34;))
         .values(new Movie(null, &#34;The Matrix&#34;, &#34;Lana Wachowski&#34;))
