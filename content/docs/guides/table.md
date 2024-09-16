@@ -96,6 +96,21 @@ movieStore
     .execute();
 ```
 
+Update a record with multiple where clause amd selected columns
+
+```java
+
+//  UPDATE movie 
+//      SET directed_by='Martyn Scorsese' 
+//      WHERE id=1 AND title='Fight Club'
+movieStore
+    .update()
+            .set(directedBy("Martyn Scorsese"))
+    .where(id().eq(1).and().title().eq("Fight Club"))
+    .execute();
+```
+
+
 ## Delete
 
 Delete all the records in the table
