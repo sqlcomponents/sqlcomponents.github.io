@@ -17,7 +17,9 @@ From here you can execute SQL Statements against the table as follows
 We need to insert a single record to the table.
 
 ```java
-// INSERT INTO movie VALUES('Inception', 'Christopher Nolan')
+/** INSERT INTO movie 
+ *      VALUES('Inception', 'Christopher Nolan')
+ * /
 movieStore
     .insert()
         .values(new Movie(null, "Inception", "Christopher Nolan"))
@@ -28,8 +30,8 @@ We need to insert multiple records to the table.
 
 ```
 /**
-INSERT INTO movie (title, directed_by) VALUES
-        ('Pulp Fiction', 'Quentin Tarantino'),
+INSERT INTO movie (title, directed_by)
+        VALUES ('Pulp Fiction', 'Quentin Tarantino'),
         ('The Matrix', 'Lana Wachowski'),
         ('Dunkirk', 'Christopher Nolan'),
         ('Fight Club', 'David Fincher'),
@@ -38,12 +40,12 @@ INSERT INTO movie (title, directed_by) VALUES
 */
 movieStore
     .insert()
-        .values(new Movie(null, "Pulp Fiction", "Quentin Tarantino"))
-        .values(new Movie(null, "The Matrix", "Lana Wachowski"))
-        .values(new Movie(null, "Dunkirk", "Christopher Nolan"))
-        .values(new Movie(null, "Fight Club", "David Fincher"))
-        .values(new Movie(null, "Interstellar", "Christopher Nolan"))
-        .values(new Movie(null, "The Social Network", "David Fincher"))
+        values(new Movie(null, "Pulp Fiction", "Quentin Tarantino"),
+            new Movie(null, "The Matrix", "Lana Wachowski")
+            new Movie(null, "Dunkirk", "Christopher Nolan"),
+            new Movie(null, "Fight Club", "David Fincher"),
+            new Movie(null, "Interstellar", "Christopher Nolan"),
+            new Movie(null, "The Social Network", "David Fincher"))
     .execute();
 ```
 
@@ -100,15 +102,16 @@ Update a record with multiple where clause
 //      WHERE id=1 AND title='Fight Club'
 movieStore
     .update()
-            .set(new Movie(null, "Blood Diamond", "Martyn Scorsese"))
-    .where(id().eq(1).and().title().eq("Fight Club"))
+        .set(new Movie(null, "Blood Diamond", "Martyn Scorsese"))
+        .where(
+            id().eq(1).and()
+            .title().eq("Fight Club"))
     .execute();
 ```
 
 Update a record with multiple where clause amd selected columns
 
 ```java
-
 //  UPDATE movie 
 //      SET directed_by='Martyn Scorsese' 
 //      WHERE id=1 AND title='Fight Club'
