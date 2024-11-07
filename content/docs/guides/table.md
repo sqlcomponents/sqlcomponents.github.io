@@ -23,7 +23,7 @@ We need to insert a single record to the table.
 movieStore
     .insert()
         .values(new Movie(null, "Inception", "Christopher Nolan"))
-    .execute();
+    .execute(dataSource);
 ```
 
 We need to insert multiple records to the table.
@@ -46,7 +46,7 @@ movieStore
             new Movie(null, "Fight Club", "David Fincher"),
             new Movie(null, "Interstellar", "Christopher Nolan"),
             new Movie(null, "The Social Network", "David Fincher"))
-    .execute();
+    .execute(dataSource);
 ```
 
 We need to insert a single record to the table and return inserted value.
@@ -65,7 +65,7 @@ We need to select all the movies
 ```java
 List<Movie> movies = movieStore
                         .select()
-                        .execute();
+                        .execute(dataSource);
 ```
 
 We need to select the movies with where clause
@@ -74,7 +74,25 @@ We need to select the movies with where clause
 List<Movie> movies = movieStore
                         .select()
                             .where(directedBy().eq("Christopher Nolan"))
-                        .execute();
+                        .execute(dataSource);
+```
+
+We need to select a movie by primary key (id columns)
+
+```java
+Movie movie = movieStore
+                        .select()
+                        .execute(dataSource);
+```
+
+
+We need to select a movie by primary key (id columns) with where clause
+
+```java
+Movie movie = movieStore
+                        .select()
+                        .where(directedBy().eq("Christopher Nolan"))
+                        .execute(dataSource);
 ```
 
 ## Update
@@ -90,7 +108,7 @@ movieStore
     .update()
             .set(new Movie(null, "Fight Club", "Martyn Scorsese"))
     .where(title().eq("Fight Club"))
-    .execute();
+    .execute(dataSource);
 ```
 
 Update a record with multiple where clause
@@ -106,7 +124,7 @@ movieStore
         .where(
             id().eq(1).and()
             .title().eq("Fight Club"))
-    .execute();
+    .execute(dataSource);
 ```
 
 Update a record with multiple where clause amd selected columns
@@ -119,7 +137,7 @@ movieStore
     .update()
             .set(directedBy("Martyn Scorsese"))
     .where(id().eq(1).and().title().eq("Fight Club"))
-    .execute();
+    .execute(dataSource);
 ```
 
 
@@ -130,6 +148,15 @@ Delete all the records in the table
 ```java
 movieStore
     .delete()
-    .execute();
+    .execute(dataSource);
 ```
 
+
+We need to delete the movies with where clause
+
+```java
+movieStore
+    .delete()
+        .where(directedBy().eq("Christopher Nolan"))
+    .execute(dataSource);
+```

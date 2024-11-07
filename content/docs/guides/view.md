@@ -15,5 +15,5 @@ MovieView movieView = DataManager.getManager().getMovieView();
 We can refresh Materialized View
 
 ```java
-movieView.refresh;
+movieView.refresh(dataSource);
 ```
