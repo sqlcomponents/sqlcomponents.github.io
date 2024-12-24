@@ -15,7 +15,7 @@ In order to generate the code at compiletime, SQLComponents has to be added as a
 		<execution>
 			<phase>generate-sources</phase>
 			<goals>
-				<goal>generated-sources</goal>
+				<goal>generate</goal>
 			</goals>
 		</execution>
 	</executions>
