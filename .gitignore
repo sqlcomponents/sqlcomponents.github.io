@@ -3,3 +3,5 @@ public
 resources
 dist
 hugo_stats.json
+
+.idea/
