@@ -10,7 +10,7 @@ In order to generate the code at compiletime, SQLComponents has to be added as a
 <plugin>
 	<groupId>org.sqlcomponents</groupId>
 	<artifactId>maven-plugin</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.2</version>
 	<executions>
 		<execution>
 			<phase>generate-sources</phase>
